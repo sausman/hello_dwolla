@@ -1,3 +1,11 @@
+GIT
+  remote: git://github.com/sausman/dwolla-v2-ruby.git
+  revision: 4b445ccaf7bb67f7f3839be74bc8578df04f38e4
+  specs:
+    dwolla_v2 (0.1.0)
+      faraday (~> 0.9)
+      faraday_middleware (~> 0.10)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -52,6 +60,10 @@ GEM
     debug_inspector (0.0.2)
     erubis (2.7.0)
     execjs (2.6.0)
+    faraday (0.9.2)
+      multipart-post (>= 1.2, < 3)
+    faraday_middleware (0.10.0)
+      faraday (>= 0.7.4, < 0.10)
     globalid (0.3.6)
       activesupport (>= 4.1.0)
     i18n (0.7.0)
@@ -71,6 +83,7 @@ GEM
     mini_portile2 (2.0.0)
     minitest (5.8.3)
     multi_json (1.11.2)
+    multipart-post (2.0.0)
     nokogiri (1.6.7.1)
       mini_portile2 (~> 2.0.0.rc2)
     rack (1.6.4)
@@ -144,6 +157,7 @@ PLATFORMS
 DEPENDENCIES
   byebug
   coffee-rails (~> 4.1.0)
+  dwolla_v2!
   jbuilder (~> 2.0)
   jquery-rails
   rails (= 4.2.5)
