@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/sausman/dwolla-v2-ruby.git
-  revision: 4b445ccaf7bb67f7f3839be74bc8578df04f38e4
+  revision: 0b18939b38479b42978a20a9d0f474403812ed58
   specs:
     dwolla_v2 (0.1.0)
       faraday (~> 0.9)

@@ -1,0 +1,8 @@
+<h1>Welcome</h1>
+
+<% if logged_in? %>
+  <p>Logged in as <%= account[:name] %></p>
+  <p><%= link_to "Log out", logout_path, method: :delete %></p>
+<% else %>
+  <p><%= link_to "Log in with Dwolla", login_path %></p>
+<% end %>
