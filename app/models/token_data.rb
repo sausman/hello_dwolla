@@ -1,6 +1,9 @@
 class TokenData < ActiveRecord::Base
   DESIRED_FRESHNESS = 1.minute
 
+  attr_encrypted :access_token, :key => 'a secret key', :mode => :per_attribute_iv_and_salt
+  attr_encrypted :refresh_token, :key => 'a secret key', :mode => :per_attribute_iv_and_salt
+
   def self.fresh_token_by! criteria
     where(criteria)
       .order(created_at: :desc)
